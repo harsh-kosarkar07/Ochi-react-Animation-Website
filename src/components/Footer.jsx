@@ -3,13 +3,13 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="w-full h-screen flex gap-5 bg-zinc-800 p-20">
+    <div className="w-full h-screen flex sm:gap-1 md:gap-5 bg-zinc-800 sm:p-5 md:p-20">
       <div className="w-1/2 h-full flex flex-col justify-between">
         <div className="heading">
-          <h1 className="text-[5vw] font-semibold uppercase leading-none ">
+          <h1 className=" sm:text-[7vw] md:text-[5vw] font-semibold uppercase leading-none ">
             Eye-
           </h1>
-          <h1 className="text-[5vw] font-semibold uppercase leading-none ">
+          <h1 className=" sm:text-[7vw] md:text-[5vw] font-semibold uppercase leading-none ">
             Opening
           </h1>
         </div>
@@ -43,13 +43,13 @@ const Footer = () => {
         </svg>
       </div>
       <div className="w-1/2">
-        <h1 className="text-[5vw] font-semibold uppercase leading-none ">
+        <h1 className=" sm:text-[6vw] md:text-[5vw] font-semibold uppercase leading-none ">
           Presentations
         </h1>
         <div className="details mt-10">
-          <a className="flex items-center gap-1 block text-xl  hover:text-sky-600 " href="#"> <FaFacebook/><span >Facebook</span></a>
-          <a className="flex items-center gap-1 block text-xl hover:text-sky-600" href="#"><FaInstagram/><span>Instagram</span></a>
-          <a className="flex items-center gap-1 block text-xl hover:text-sky-600"  href="#"><FaTwitter/> <span>Twitter</span></a>
+          <a className="flex items-center gap-1 block md:text-xl  hover:text-sky-600 " href="#"> <FaFacebook/><span >Facebook</span></a>
+          <a className="flex items-center gap-1 block md:text-xl hover:text-sky-600" href="#"><FaInstagram/><span>Instagram</span></a>
+          <a className="flex items-center gap-1 block md:text-xl hover:text-sky-600"  href="#"><FaTwitter/> <span>Twitter</span></a>
         </div>
       </div>
     </div>

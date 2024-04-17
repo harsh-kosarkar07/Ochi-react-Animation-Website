@@ -12,16 +12,16 @@ const Featured = () => {
   };
 
   return (
-    <div className=" w-full py-20 bg-slate-900 ">
-      <div className=" w-full px-20 border-b-[1px] border-zinc-700 pb-20">
-        <h1 className=" text-7xl">Featured projects</h1>
+    <div className=" w-full sm:py-10 md:py-20 bg-slate-900 ">
+      <div className=" w-full sm:px-5 md:px-20 border-b-[1px] border-zinc-700 sm:pb-10 md:pb-20">
+        <h1 className=" sm:text-4xl md:text-7xl">Featured projects :</h1>
       </div>
-      <div className=" px-20">
-        <div className="cards w-full flex gap-10 mt-10">
+      <div className=" sm:px-5 md:px-20">
+        <div className="cards w-full flex  sm:gap-3 md:gap-10 mt-10">
           <motion.div
             onHoverStart={() => handleHover(0)}
             onHoverEnd={() => handleHoverEnd(0)}
-            className="card-container relative w-1/2 h-[75vh]  "
+            className="card-container relative md:w-1/2 md:h-[75vh] sm:h-[35vh] "
           >
             <h1 className="absolute  left-full -translate-x-1/2 top-1/2 -translate-y-1/2  z-[999] text-8xl tracking-tighter text-[#a9c73b] overflow-hidden flex">
               {"FYDE".split("").map((item, index) => (
@@ -46,7 +46,7 @@ const Featured = () => {
           <motion.div
             onHoverStart={() => handleHover(1)}
             onHoverEnd={() => handleHoverEnd(1)}
-            className="card-container relative w-1/2 h-[75vh]   "
+            className="card-container relative  md:w-1/2 md:h-[75vh] sm:h-[35vh] "
           >
             <h1 className="absolute right-full translate-x-1/2 top-1/2 -translate-y-1/2  z-[999] text-8xl tracking-tighter text-[#a9c73b] flex overflow-hidden ">
               {"VISE".split("").map((item, index) => (
